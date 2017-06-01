@@ -3,25 +3,23 @@ function caclRemaindar(i,j) {
     Remaindar = i % j;
     return Remaindar;
 };
-
 function caclSum(array) {
-    var Sum = 0;
+    var sum = 0;
     for (var i = 0; i < array.length; i++){
-        Sum += array[i];
+        sum += array[i];
     }
-    return Sum;
-};
-
-function caclSumInConditon(array1,j) {
-    var i;
+    return sum;
+}
+function caclSumInConditon(array1,i) {
     var SumInConditon = 0;
-    for (i = 0; i < array1.length; i++){
-        if(array1[i] < j){
-            SumInConditon += array1[i];
+    for (let number of array1){
+        if (number < i)
+        {
+            SumInConditon += number;
         }
     }
     return SumInConditon;
-};
+}
 
 module.exports = {
     caclRemaindar,

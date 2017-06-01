@@ -9,7 +9,7 @@ describe('main()', () => {
 
     it('should calculate the sum of numbers which are in array', () => {
         let numArray1 = [3, 6, 1, 8, 6, 4, 2];
-        let numArray2 = [1, 2, 6, 2, 9, 0, 4];
+        let numArray2 = [1, 2, 6, 2, 9, 0, 4];  
         
         expect(main.caclSum(numArray1)).toBe(30);
         expect(main.caclSum(numArray2)).toBe(24);
